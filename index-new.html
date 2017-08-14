@@ -1,0 +1,1467 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Intro to Programming Concepts | Girl Develop It Cincinnati</title>
+
+		<meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Forked from Hakim El Hattab's reveal.js">
+		<meta name="author" content="Girl Develop It">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/gdisunny.css" id="theme">
+		<!-- Some Typographic Style Edits --> <link rel="stylesheet" href="css/type.css">
+
+		<!-- For syntax highlighting -->
+		<!-- light editor <link rel="stylesheet" href="lib/css/light.css"> -->
+		<!-- dark editor --> <link rel="stylesheet" href="lib/css/dark.css">
+		<!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
+
+	<link rel="stylesheet" href="plugin/accessibility-helper/css/accessibility-helper.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		
+    </style>
+		<script>
+			if( window.location.search.match( /print-pdf/ ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+
+			}
+		</script>
+
+		<!-- I'M COMMENTING TO COMMENT -->
+
+		<!-- If use the PDF print sheet so students can print slides-->
+
+		<link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section> <!-- Opening -->
+					<img src="img/circle-gdi-logo.png" alt="GDI Logo" class="noborder" style="height: 50vh;"/>
+					<h1>Intro to Programming Concepts</h1>
+					<p>
+						<small>Brought to you by <a href="www.girldevelopit.com/chapters/cincinnati">Girl Develop It Cincinnati</a> | <a href="http://www.twitter.com/gdicincinnati">@GDICincinnati</a></small>
+					</p>
+					<p>
+						<small>Presented by Amy Moyer </small>
+					</p>
+				</section>
+
+				<section> <!-- Welcome (GDI Introduction)-->
+					<h2>Welcome!</h2>
+					<p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+					<h3>Things to keep in mind:</h3>
+					<ul>
+						<li>We are here for you!</li>
+						<li>Every question is important</li>
+						<li>Help each other</li>
+						<li>Have fun!</li>
+					</ul>
+				</section>
+
+				<section> <!-- What to expect-->
+					<h2>What to Expect</h2>
+					<ul>
+						<li>This is a survey of a very broad topic</li>
+						<li>Get a sense of what you'd like to know more about</li>
+						<li>I don't know everything, and neither will you</li>
+						
+					</ul>
+				</section>
+
+				<section> <!-- Welcome (Getting to Know You) -->
+					<h2>Getting to Know You</h2>
+					<ol>
+						<li>What's your name?</li>
+						<li>What do you want to take from this class?</li>
+						<li>What's the best meal you've ever had?</li>
+					</ol>
+				</section>
+
+				<section > <!-- Overview: What's Covered in the Class -->
+					<h2>What We'll Be Covering:</h2>
+					<ol>
+						<li >The History of Computing</li>
+						<li >What is a Computer Program</li>
+						<li >How Programming Languages Developed</li>
+						<li >Basic Programming Concepts</li>
+						<li >What Should I Do Next?</li>
+					</ol>
+
+
+					<aside class="notes">
+						In this workshop, we'll be sampling from a number of topics, starting
+						with running through the history of how computers as we understand
+						them today came to be,
+						and how the way humans talk to computers has changed. Then we'll dig
+						into some top-level programming concepts to lay a nice foundation for
+						your further forays into programming.
+
+						By the end of this workshop, you will also have dabbled in JavaScript,
+						Python, and Ruby, and have an enhanced understanding of many programming
+						jokes.
+					</aside>
+				</section>
+
+				<section data-background="img/slide-images/go-back.gif"> <!-- SEGUE: The History of Computing -->
+				</section>
+
+				<section> <!-- Computation: The Early Years -->
+					<h1>Computation: <br>The Early Years</h1>
+				</section>
+
+				<section> <!-- Computation: The Early Years: Analog Calculators -->
+					<h2>Computation: The Early Years</h2>
+
+					<div style="float: left; width: 33%;">
+						<img src="img/slide-images/abacus.jpg" alt="An abacus." />
+					</div>
+					<div style="float: left; width: 33%; margin: 0 0.5%">
+						<img src="img/slide-images/astrolabe.jpg" alt="An astrolabe." />
+					</div>
+					<div style="float: left; width: 33%;">
+						<img src="img/slide-images/sliderule.jpg" alt="A slide rule." />
+					</div>
+
+					<p>
+						<i><small>Examples of some early analog calculators.</small></i>
+					</p>
+
+					<aside class="notes">
+						People have been using tools with varying levels of complexity to make math
+						easier for years, from abacuses for basic math to slide rules for trigonometry
+						for logorithms. However, these technologies only went so far in that they had singular
+						purposes and their scope was limited by the space they occupied, and as the Industrial
+						Revolution kicked up and global trade started to expand, it became more imperative
+						to get engineers and navigators the appropriate tables of equations so they could
+						do their jobs well. These were difficult to reproduce accurately, and folks were
+						feeling the pain. In classic infomercial style, THERE HAS TO BE A BETTER A BETTER WAY.
+					</aside>
+				</section>
+
+				
+
+				<section> <!-- Computation: The Early Years: Mechanical Calculators -->
+					<h2>Computation: The Early Years</h2>
+					<img src="img/slide-images/difference-engine-drawing.jpg" style="height: 50vh;" alt="Difference Engine drawing" />
+
+					<p>
+						<i><small>Diagram of Charles Babbage's Difference Engine.</small></i>
+					</p>
+
+					<aside class="notes">
+						And indeed there was! In 1822, Charles Babbage concepted a mechanical calculator
+						that could print up these tables without risk of human error that he styled
+						the Difference Engine. The British government was all over this in that first year
+						gave him £1,700, which, in today's money, is roughly $200K.
+					</aside>
+				</section>
+
+				<section> <!-- Computation: The Early Years: The Struggle of Science -->
+					<h2>Computation: The Early Years</h2>
+
+					<img src="img/slide-images/differenceengine.jpg" style="height: 50vh;" alt="A constructed difference engine" />
+					<p>
+						<i><small>An actual difference engine built out.</small></i>
+					</p>
+
+					<aside class="notes">
+						However, as far as the British government was concerned, human error still reigned
+						in this case, as the Difference Engine ended up being trapped in development hell — the
+						engine he concepted was too spendy and too complicated to produce at that time and wouldn't
+						actually be built out until 1989 when it was basically done for fun by the London Science Museum
+						Also to their chagrin, Babbage had gotten distracted by another project in 1837 –
+						an analytical engine that could be used more broadly, had "memory", and could grapple with
+						loops and conditional branching.
+					</aside>
+				</section>
+
+				<section> <!-- Computation: The Early Years: The First Program -->
+					<h2>Computation: The Early Years</h2>
+					<img src="img/slide-images/adaprogram.jpg" alt="A diagram showing Ada Lovelace's program for the computation of Bernoulli numbers." />
+					<p>
+						<i><small>A program for the computation of Bernoulli numbers designed for the analytical engine.</small></i>
+					</p>
+					<aside class="notes">
+						Babbage's mathematical bestie was also pretty excited about this analytical
+						engine, and when asked to translate a paper on a lecture he gave on the machine in French,
+						in 1843 casually included annotations several times longer than the entire, explaining
+						why it was so cool. Including an algorithm designed specifically use on the
+						engine, which has the distinction of being the first published computer program.
+					</aside>
+				</section>
+
+				<section> <!-- Computation: The Early Years: The First Programmer-->
+					<h2>Computation: The Early Years</h2>
+					<img src="img/slide-images/adalovelace.jpg" alt="A portrait of Ada Lovelace." />
+					<p><small><i>Our Lady of Conceptual Programming, <strong class="blue">Ada Lovelace</strong></i></small></p>
+
+					<aside class="notes">
+						Said programmer was Ada Lovelace.
+					</aside>
+				</section>
+
+				
+
+				
+
+
+				<section> <!-- How We Talk to Computers -->
+					<h1>How Do We Talk To Computers?</h1>
+				</section>
+
+				<section>
+					<h2>What is a Computer Program?</h3>
+					<p>
+						At its core, a computer program is a way of <strong class='blue'>getting something done</strong>.
+					</p>
+					<aside class="notes">
+						Programs are everywhere... Can anyone think of an example of a program that they might have interacted with today? 
+					</aside>
+					
+				</section>
+
+				<section>
+					<h2>Program Examples</h3>
+					<div style="float: left; width: 100%;">
+						<img src="img/slide-images/program_examples2.png"  />
+
+						<p>But how do you go from an idea to a computer program? And what IS a computer program?</p>
+					</div>
+					
+					<aside class="notes">
+						
+					</aside>
+					
+				</section>
+
+				<section>
+					<h2>Computer Program</h3>
+					<p>
+						One of the ways to accomplish <strong class='blue'>getting something done</strong> is a list of instructions that tells the computer exactly what to do and allows interaction with human beings.
+
+					<p>
+						Those instructions have to be written in a <strong class='blue'>language</strong> that the computer can understand.
+					</p>
+				</section>
+
+				<section>
+					<h2>What is a Programming Language?</h3>
+					<p>
+						A programming language is basically a set of strings (letters, numbers, commands) that is changed into <strong class='blue'>machine code</strong> that the computer can understand.
+					</p>
+				</section>
+
+				<section>
+					<h2>Computer Programs</h3>
+					<p>
+						Computers don't understand things the same way humans do. 
+					</p>
+					<p>					
+					Words and symbols that make sense to human eyes need to be translated down to <strong class='blue'>binary</strong> for the computer to understand.
+					</p>
+					
+				</section>
+				<section>
+					<h2>Binary</h3>
+					
+					<p>
+						Binary is a system of expressing everything using only 1s and 0s.<br/>
+						<img src="img/slide-images/binary.png"  />
+					</p>
+				</section>
+
+				
+
+				 <section> <!-- The Evolution of Programming Languages -->
+					<h2>The Evolution of Programming Languages</h2>
+					<ul>
+						<li><strong class="blue">First Generation</strong>: Machine Code</li>
+						<li><strong class="blue">Second Generation (1949)</strong>: Assembly Code</li>
+						<li><strong class="blue">Third Generation (Late 1950s)</strong>: High-Level Language</li>
+						<li><strong class="blue">Fourth Generation (1980s)</strong>: Even Higher-Level Language</li>
+					</ul>
+				</section>
+
+				<section> <!-- First Generation Programming Languages -->
+					<h2>How We Talk To Computers:<br> The First Generation</h2>
+					<p>
+						<strong class='blue'>Machine code</strong>, is the straight-up use
+						of binary as a means of programming.
+					</p>
+					<img class="noborder" src="img/slide-images/cuteputers_chatty.svg" style="height: 50vh" alt="A computer saying hello in binary.">
+
+					<aside class="notes">
+						When digital computers actually started being made, they ultimately
+						could only be spoken to electronically in a series of zeros and ones
+						— binary — and telling them what to do could only really be accomplished
+						by feeding them punched film or paper or manually adjusting plugs or
+						switches.
+					</aside>
+				</section>
+
+				<section> <!-- First Generation Programming Languages -->
+					<h2>How We Talk To Computers:<br> The First Generation</h2>
+					<img src="img/slide-images/colossus.png" style="height: 60vh" alt="Photo of two programmers next to the Colossus at Bletchley Park" />
+
+					<aside class="notes">
+						If this sounds like a pain, it’s because it was — a series of zeroes and
+						ones are very far from being immediately meaningful to anyone but computers,
+						who would happily chug away on them.
+					</aside>
+				</section>
+
+				<section> <!-- First Generation Programming Languages -->
+					<h2>How We Talk To Computers:<br> The First Generation</h2>
+					<img src="img/slide-images/punchcard.jpg" style="height: 55vh" >
+<br />
+					<ul>
+						<li>One character per column</li>
+ 						<li>That's 80 bytes per card</li>
+ 						<li>MicroSD = 199,963,443 cards </li>
+					</ul>
+					<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section> <!-- Second Generation Programming Languages -->
+					<h2>How We Talk To Computers: <br>The Second Generation</h2>
+					<p>
+						<img src="img/slide-images/assemblycode.gif" alt="A screencap of some gnarly assembly code." />
+					</p>
+					<aside class="notes">
+						The first response to machine code was assembly code. These languages
+						made use of a program called an assembler that assigned chunks of zeros
+						and ones that had specific purposes to symbolic names.
+					</aside>
+				</section>
+
+				<section> <!-- Second Generation Programming Languages -->
+					<h2>How We Talk To Computers: <br>The Second Generation</h2>
+					<p>
+						<strong class='blue'>Assembly code</strong> is code that
+						uses chunks of text as symbols for specific processes.
+					</p>
+
+					<aside class="notes">
+						Assembly code… looks vaguely better than a sweep of binary.
+						It was more user-friendly in this respect, but a big problem with
+						assembly languages is that they’re incredibly specific — in that
+						they only work on a single type of computer. Which sounds like
+						a bummer, but when the number of extant computers was in the
+						low double-digits, there wasn't too much pressure.
+					</aside>
+				</section>
+
+				<section data-background="img/slide-images/thisisfine.jpg"> <!-- Enter the Compiler -->
+					<!-- A picture of a cartoon dog in a burning house staying put and
+							saying "This is fine." -->
+					<aside class="notes">
+						For some, this was close enough. As much as they could hope for.
+						And besides, no big deal, computers are just glorified calculators
+						that work really, really fast, right?
+
+						... until someone came along who looked at this nonsense and thought
+						"No. This is not fine. This is ridiculous."
+					</aside>
+				</section>
+
+				<section> <!-- Enter the Compiler: Grace Hopper -->
+					<img src="img/slide-images/gracehopper.jpg" alt="A portrait of Grace Hopper" />
+					<p>
+						<small><i>Our Lady of Code Compilation, <strong class="blue">Grace Hopper</strong></i></small>
+					</p>
+					<aside class="notes">
+						This person was Grace Hopper, who, after absolutely crushing it in the
+						Navy during WWII writing programs used on the US's ships, proceeded to
+						absolutely crush it in the private sector and in 1952 wrote the
+						first compiler — a computer program that would convert honest-to-goodness
+						text, not alphabet soup, into binary that any computer could read.
+					</aside>
+				</section>
+
+				<section data-background="img/slide-images/mindblown.gif">
+					<!-- Dude dressed as Carl Sagan Cosmos-style getting his mind blown. -->
+					<aside class="notes">
+						This floored her coworkers, but once they were convinced that the
+						compiler didn't bite, it precipitated the next wave of programming
+						languages...
+					</aside>
+				</section>
+
+				<section> <!-- Third Generation Programming Languages -->
+					<h2>How We Talk To Computers: <br>The Third Generation</h2>
+					<p>
+						<strong class='blue'>Third-generation languages </strong> are languages
+						that machine-independent and whose syntax is abstracted and
+						reads in a much more human fashion.
+					</p>
+					<aside class="notes">
+						Third-generation programming languages, machine-independent, abstracted
+						further away from the computer and sounding much more human. These are
+						often referred to as high-level programming languages. For the sake of
+						comparison, here's a 'hello world' program written in Assembly for Linux...
+					</aside>
+				</section>
+
+				<section> <!-- Third Generation Programming Languages // Before -->
+					<h2>Before / Assembly</h2>
+					<pre><code contenteditable="assembly" style="font-size: 0.6em; line-height: 1.3;">section     .text
+global      _start               		;must be declared for linker (ld)
+
+_start:                          		;tell linker entry point
+
+	mov     edx,len              		;message length
+	mov     ecx,msg              		;message to write
+	mov     ebx,1                		;file descriptor (stdout)
+	mov     eax,4                		;system call number (sys_write)
+	int     0x80                 		;call kernel
+
+	mov     eax,1                		;system call number (sys_exit)
+	int     0x80                 		;call kernel
+
+section     .data
+
+msg     db  'Hello, world!',0xa  ;our dear string
+len     equ $ - msg              ;length of our dear string
+					</code></pre>
+					<p><small><i>A touch of Assembly.</i></small></p>
+
+					<aside class="notes">
+						... and here's a 'hello world' program written in one of the first
+						third-gen languages COBOL.
+					</aside>
+				</section>
+
+				<section> <!-- Third Generation Programming Languages // After -->
+					<h2>After / High-Level</h2>
+					<pre><code contenteditable="cobol">IDENTIFICATION DIVISION.
+PROGRAM-ID. HELLOWORLD.
+PROCEDURE DIVISION.
+MAIN.
+DISPLAY 'Hello, world.'.
+STOP RUN.</code></pre>
+					<p><small><i>A touch of COBOL.</i></small></p>
+					<aside class="notes">
+						... see? Feels so much better and airier already!
+					</aside>
+				</section>
+
+				<section> <!-- Third Generation Programming Languages-->
+					<h2>How We Talk To Computers: <br>The Third Generation</h2>
+					<div class="halfblock">
+						<strong style="text-align: right; display: block; padding-right: 30px;" class='green'>Examples: </strong>
+					</div>
+					<div class="halfblock">
+						<ul style="float: left;">
+							<li>COBOL</li>
+							<li>FORTRAN</li>
+							<li>BASIC</li>
+							<li>C</li>
+						</ul>
+					</div>
+
+					<aside class="notes">
+						This precipitated the creation of a number of languages, some getting more
+						traction than others. Assembly is still used for programs that work closely
+						with hardware and need the device specificity and control, but for programs
+						that humans needed to program and interact with, high-level languages were
+						the way to go.
+					</aside>
+				</section>
+
+				<section> <!-- Fourth Generation Programming Languages-->
+					<h2>How We Talk To Computers: <br>The Fourth Generation</h2>
+					<div class="halfblock">
+						<strong style="text-align: right; display: block; padding-right: 30px;" class='green'>Examples: </strong>
+					</div>
+					<div class="halfblock">
+						<ul style="float: left;">
+							<li>JavaScript</li>
+							<li>Python</li>
+							<li>Ruby</li>
+							<li>Swift</li>
+						</ul>
+					</div>
+
+					<aside class="notes">
+						While there's not a super-distinct boundary between the third and fourth generations,
+						there were definite developments in how programs handled stored data and
+						also in avenues for code use — namely, the emergence of the internet. But by this
+						time, there's a clear interest in making languages as clear as possible
+						to programmers, which is very nicely summed up in the philosophy of the
+						creator of Ruby, Yukihiro "Matz" Matsumoto. (slide advance)
+					</aside>
+				</section>
+
+				<section> <!-- Fourth Generation Programming Languages-->
+					<h2>How We Talk To Computers: <br>The Fourth Generation</h2>
+					<pre><code contenteditable="ruby">puts 'Hello, world!'</code></pre>
+					<small><i>A touch of Ruby.</i></small>
+
+					<aside class="notes">
+						... and now most programming languages getting play nowadays look more like this.
+					</aside>
+				</section>
+
+				<section> <!-- Programming Languages: Review -->
+					<h1>To review...</h1>
+
+					<aside class="notes">
+						And now to review, we're going to look at all of these generations.
+						again, all performing a popular fist program — writing the text "Hello World."
+						to the screen.
+					</aside>
+				</section>
+
+				<section> <!-- Programming Languages: Review -->
+					<h2>First Generation</h2>
+					<pre><code contenteditable="binary">011010000110010101101100011011000110111100100000011101110110111101110</code></pre>
+					<p><small><i>"Hello World" in binary.</i></small></p>
+
+					<aside class="notes">
+						This binary slide is kind of a fake-out. This is just the characters for
+						"Hello World" converted into their binary equivalents, this piece of code
+						wouldn't get anything to render on the screen.
+					</aside>
+				</section>
+
+				<section> <!-- Programming Languages: Review -->
+					<h2>Second Generation</h2>
+					<pre><code contenteditable="assembly" style="font-size: 0.6em; line-height: 1.3;">section     .text
+global      _start               		;must be declared for linker (ld)
+
+_start:                          		;tell linker entry point
+
+	mov     edx,len              		;message length
+	mov     ecx,msg              		;message to write
+	mov     ebx,1                		;file descriptor (stdout)
+	mov     eax,4                		;system call number (sys_write)
+	int     0x80                 		;call kernel
+
+	mov     eax,1                		;system call number (sys_exit)
+	int     0x80                 		;call kernel
+
+section     .data
+
+msg     db  'Hello, world!',0xa  ;our dear string
+len     equ $ - msg              ;length of our dear string
+					</code></pre>
+					<p><small><i>"Hello World" in Assembly.</i></small></p>
+				</section>
+
+				<section> <!-- Programming Languages: Review -->
+					<h2>Third Generation</h2>
+					<pre><code contenteditable="cobol">IDENTIFICATION DIVISION.
+PROGRAM-ID. HELLOWORLD.
+PROCEDURE DIVISION.
+MAIN.
+DISPLAY 'Hello, world.'.
+STOP RUN.</code></pre>
+					<p><small><i>"Hello World" in COBOL.</i></small></p>
+				</section>
+
+				<section> <!-- Programming Languages: Review -->
+					<h2>Fourth Generation</h2>
+					<pre><code contenteditable="ruby">puts 'Hello, world!'</code></pre>
+					<small><i>"Hello World" in Ruby.</i></small>
+				</section>
+				<section>
+					<h2>Evolution</h3>
+					
+					<p>
+						From human-readable languages to binary:<br/>
+						<img src="img/slide-images/languages.png"  />
+					</p>
+				</section>
+
+				<section> <!-- How To Talk to Computers -->
+					<h1>How To Talk To Computers</h1>
+
+					<aside class="notes">
+						Now, we start to get to the fun part, where we start talking to computers.
+						However... there are some things to be aware of.
+					</aside>
+				</section>
+
+				<section> <!-- How To Talk to Computers: Computers are kind of dumb. -->
+					<h2>How To Talk To Computers</h2>
+					<p class="fragment">
+						The best thing about computers is that they <br>will do exactly what you tell them to do.
+					</p>
+					<p class="fragment">
+						The worst thing about computers is that they<br> will do exactly what you tell them to do.
+					</p>
+
+					<aside class="notes">
+						While programming languages have gotten easier to read and write,
+						what we ask the computer to do will ultimately be taken by the compiler
+						and converted into a series of zeros and ones. It is said that the
+						best thing about computers is that they will do exactly what you
+						tell them to do. It’s also said that the worst thing about computers
+						is that they do exactly what you tell them to do.
+					</aside>
+				</section>
+
+			<section> <!-- How To Talk to Computers: A Demonstration -->
+					<h2>How To Talk To Computers: <br>A Demo</h2>
+
+					<img class="fragment" src="img/slide-images/pbj.jpg" alt="A peanut butter and jelly sandwich" />
+
+					<aside class="notes">
+						So for your benefit, our fearless leader Becky and class coordinator
+						Amy will graciously demonstrate how computers tend to operate... by
+						attempting to make a peanut butter and jelly sandwich.
+
+						(DEMO)
+
+					</aside>
+				</section>
+
+				<section> <!-- How To Talk to Computers: A Demonstration -->
+					<h1>How To Talk To Computers: <br>A Demo</h1>
+
+					<img src="img/slide-images/indecisive.gif" alt="Fred Armisen panicking and being indecisive." />
+
+					<aside class="notes">
+						As you can see, it's... not exactly that easy. While programming languages
+						look fairly similar to English, they're pretty particular about the way
+						that you relay instructions to them and aren't able to make assumptions
+						about what steps are necessary ahead of an action unless they're told
+						explicitly to them.
+					</aside>
+				</section>
+
+				<section style="top: -298.5px; display: none;" class="past" hidden="">
+				<h3>PEBKAC</h3>
+				<p>Ever heard of the acronym "PEBKAC"?</p>
+				<br>
+				<div>
+					<span class="fragment visible" data-fragment-index="0"><strong>P</strong>roblem</span> 
+					<span class="fragment visible" data-fragment-index="1"><strong>E</strong>xists</span> 
+					<span class="fragment visible" data-fragment-index="2"><strong>B</strong>etween</span> 
+					<span class="fragment visible" data-fragment-index="3"><strong>K</strong>eyboard</span> 
+					<span class="fragment visible" data-fragment-index="4"><strong>A</strong>nd</span> 
+					<span class="fragment visible" data-fragment-index="5"><strong>C</strong>hair</span> 
+				</div>
+				<br>
+				<p class="fragment visible" data-fragment-index="6">In other words, <strong>user error</strong>.</p>
+				<br>
+				<p class="fragment visible" data-fragment-index="7">Remember, when you're writing a program and the computer is executing it, the computer is only doing what you told it to do.  If it's not working the way you expect, look for an error in your program.</p>
+			
+			</section>
+			<section> <!-- How To Talk to Computers: A Demonstration -->
+					<h1>Pseudo Code</h1>
+
+					<img src="img/slide-images/pseudocode.png"  />
+
+					<aside class="notes">
+						Planning ahead is key when programming. Often times programs start on a white board or with pen and paper where the programmer writes out the logic in English. Let's try another example with cookies. 
+
+						We spent all day baking 4 different kinds of cookies! Don't they look glorious. Yum!
+
+						But of course the smell of fresh baked cookies brings the crowds. 
+
+						And whoosh! They're gone. 
+
+						But we need to keep track of how many cookies we made! And which type they were! 
+
+						For each cookie that someone gobbles up we're going to make a hatch mark on the cooresponding  cookie's paper. 
+
+						We're going to walk through this like a computer though and go top to bottom in sequential order. 
+					</aside>
+			
+
+			</section>
+			<section> <!-- How To Talk to Computers: A Demonstration -->
+
+
+				<img src="img/slide-images/taylorswift.gif" />
+			</section>
+
+			<section> <!-- How To Talk to Computers: A Demonstration -->
+				
+
+				<img src="img/slide-images/baking.gif"  />
+
+			</section>
+			<section> <!-- How To Talk to Computers: A Demonstration -->
+				
+
+				<img src="img/slide-images/cookiejar.jpg"  />
+
+			</section>
+			<section>
+					<img src="img/slide-images/cookiecat.gif"   />
+			</section>
+			<section>
+					<img src="img/slide-images/batmancookie.gif"   />
+			</section>
+			<section>
+					<img src="img/slide-images/spongebobcookie.gif"   />
+			</section>
+			<section>
+					<img src="img/slide-images/cookiegone.gif"   />
+			</section>
+			<section>
+					<img src="img/slide-images/pseudocode.jpg"   />
+			</section>
+			<section>
+					<img src="img/slide-images/allout.gif"   />
+			</section>
+				<section> <!-- Time to get into coding! -->
+					<h1>Let's Talk To Computers!</h1>
+					<aside class="notes">
+						So, all that being said... it is now time to get computers to do our bidding.
+					</aside>
+				</section>
+
+				<section> <!-- Concepts: Overview -->
+					<h2>Let's Talk To Computers: Concepts</h2>
+					We'll be covering
+						<strong class="fragment highlight-blue">Variables</strong>,
+						<strong class="fragment highlight-blue">Conditionals</strong>, and
+						<strong class="fragment highlight-blue">Loops</strong>!
+				</section>
+
+				<section> <!-- Let's meet the console. -->
+					<h2>Let's Meet the Terminal!</h2>
+					<p>
+						The <strong class="blue">terminal</strong> is a space where we
+						run chunks of code and test them to make sure that it's behaving in
+						the way we want it to.
+					</p>
+					<p>
+						For this course, we'll be making use of an online terminal named <a href="https://repl.it">repl.it</a>.
+					</p>
+
+					<aside class="notes">
+						But before we get started, let's meet the terminal! The terminal is
+						a space where we can run chunks of code and test them to make sure
+						that it's behaving predictably.
+
+						We'll be using Python for this course because I really think it's the most human readable for a beginner. 
+					</aside>
+				</section>
+				<section>
+			
+						<img src="img/slide-images/python.jpg"  />
+					
+				</section>
+
+				<section> <!-- Variables -->
+					<h2>Let's Talk To Computers: Variables</h2>
+
+            <p class="fragment">A <strong class="blue">variable</strong> is essentially a <strong class="blue">storage container <br>for information</strong>.</p>
+						<div class="fragment">
+								<p style="font-weight: bold; text-align: left; padding-left: 45px;" class="green small">Examples:</p>
+
+								<pre><code contenteditable class ="python"> my_name = "Amy"
+ my_fav_color = "green"
+ my_city = "Cincinnati"</code></pre>
+						</div>
+            <p class="fragment small" style="margin-top: 20px;">Variables come in several flavors, but here we'll be covering<br> <strong class="blue">Numbers</strong>, <strong class="blue">Strings</strong>, and <strong class="blue">Booleans</strong>.</p>
+
+						<aside class="notes">
+							Some of of you may remember variables from algebra — but if any of
+							you have some post-traumatic stress from this time, fear not —
+							there's no need to solve for anything, variables are our friends,
+							and they help us store information that we can access later in our
+							code. The computer will be manipulating all of your variables,
+							you will just be telling it how.
+
+							There are a few different types of information that can be stored
+							as variables — some of which are numbers, strings, and booleans.
+							The variables in the code chunk above are strings.
+
+							They all have a name, and hold a value. 
+						</aside>
+				</section>
+
+				<section> <!-- Variables: Numbers -->
+					<h2>Variable Types: Numbers</h2>
+					<p class="copy--small box">Variables can be used to store numbers</p>
+
+					<aside class="notes">
+						True to the computer's versatile calculator origins, variables can be
+						used to store numbers that are used across a program with a meaningful
+						label.
+					</aside>
+				</section>
+
+				<section data-background="img/slide-images/amazonsample.jpg"> <!-- Variables: Example Slide -->
+					<aside class="notes">
+						Now, time for some programming "Where's Waldo" — what items on this
+						Amazon page could be stored as number variables?
+
+						(Gather responses, hunt a little bit.)
+					</aside>
+				</section>
+
+				<section> <!-- Variables: Numbers (cont.) -->
+					<h2>Variable Types: Numbers</h2>
+					<p class="copy--small box">Variables can be used to store numbers.</p>
+					<pre><code contenteditable class ="pyton">book_quantity = 2
+book_price = 20
+book_discount = 0.41</code></pre>
+
+					<aside class="notes">
+						Yes indeed — the price of the book could be stored as a number, as well
+						as the quantity ordered, how much the book is discounted (list anything
+						else mentioned here too.)
+					</aside>
+				</section>
+
+				<section> <!-- Variables: Strings -->
+					<h2>Variable Types: Strings</h2>
+					<p class="copy--small box">Variables can also be used to store text.</p>
+
+					<aside class="notes">
+						Another type of variable is a string, whose purpose is to hold bits of text.
+					</aside>
+				</section>
+
+				<section data-background="img/slide-images/amazonsample.jpg"> <!-- Variables: Example Slide -->
+					<aside class="notes">
+						Rolling back to the Amazon page, what bits could be stored as
+						string variables?
+
+						(Gather responses, hunt a little bit.)
+					</aside>
+				</section>
+
+				<section> <!-- Variables: Strings (cont.) -->
+					<h2>Variable Types: Strings</h2>
+					<p class="copy--small box">Variables can also be used to store text.</p>
+					<pre><code contenteditable class ="pyton">book_title = "Romeo and/or Juliet: A Chooseable-Path Adventure"
+book_author = "Ryan North"</code></pre>
+					<p>
+						Usually when a string is created in a program, it's surrounded by quotation marks.
+					</p>
+
+					<aside class="notes">
+						... pretty much all of the text on the page can be stored as a string,
+						but in this case, I had extracted the title of the book and the author
+						of the book for the sake of example. Either way, typically when a string
+						is created by a program, it's surrounded by quote marks.
+				</section>
+
+				<section> <!-- Variables: Numbers as Strings -->
+					<h2>Variable Types: <br>Numbers as Strings</h2>
+					<p>You can store numbers as a string variables too!</p>
+					<p>This is best used for numbers that aren't/shouldn't be used in mathematical
+					equations. Numbers can also become part of strings if directly added to them.</p>
+
+					<pre class="fragment"><code contenteditable class ="pyton">jennys_number = "8675309"</code></pre>
+
+					<aside class="notes">
+						However, because it's kind of difficult to manipulate strings, it can
+						sometimes be a good idea to store numbers as string variables in order
+						to prevent them from being used in mathematical equations. If you
+						happened to be Tommy Tutone, you would probably store Jenny's number
+						as a string after insisting that she not change it.
+					</aside>
+				</section>
+
+				<section> <!-- Variables: Booleans -->
+					<h2>Variable Types: Booleans</h2>
+					<p class="copy--small box">Variables can also be used to store<br> <strong class='blue'>TRUE</strong> or <strong class='blue'>FALSE</strong> as a value.</p>
+					<aside class="notes">
+						Variables can also be used to store true or false as a value.
+					</aside>
+				</section>
+
+				<section data-background="img/slide-images/amazonsample.jpg"> <!-- Variables: Example Slide -->
+					<aside class="notes">
+						Once again, the Amazon page — what bits could be stored as
+						a boolean value?
+
+						(Gather responses, hunt a little bit.)
+					</aside>
+				</section>
+
+				<section> <!-- Variables: Booleans (cont.) -->
+					<h2>Variable Types: Booleans</h2>
+					<p class="copy--small box">Variables can also be used to store <strong class='blue'>TRUE</strong> or <strong class='blue'>FALSE</strong> as a value.</p>
+					<pre><code contenteditable class ="pyton">logged_in = False
+prime_member = False</code></pre>
+					<p>
+						You can define a condition, then use a Boolean to tell the computer whether that condition is true or false.
+					</p>
+
+					<aside class="notes">
+						So some of the Amazon examples could include the user's logged-in
+						state or Amazon Prime status. Generally, booleans are used to state
+						whether a given condition is true or false. Speaking of which...
+					</aside>
+				</section>
+
+				<section> <!-- Variables: Variables are mutable -->
+					<h2>Variable Ability #1</h2>
+					<p>The value of variables can be updated over the course of a program.</p>
+				</section>
+
+				<section> <!-- Variables: Variables are mutable (example) -->
+					<div>
+						<h2>Variable Ability #1</h2>
+						<img src="img/slide-images/cookiejar.jpg"  />
+					</div>
+					<aside class="notes">
+						Like we learned earlier, variables are storage containers... (advance
+						slide) ... much like this jar is a container for cookies (advance slide)
+					</aside>
+				</section>
+
+				<section> <!-- Variables: Variables are mutable (example) -->
+					<div>
+						<h2>Variable Ability #1</h2>
+						<img src="img/slide-images/cookiefreakout.gif"  />
+					</div>
+					<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section> <!-- Variables: Variables are mutable (example) -->
+					<div>
+						<h2>Variable Ability #1</h2>
+						<img src="img/slide-images/emptyjar.gif"  />
+					</div>
+					<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section> <!-- Variables: Variables are mutable (example) -->
+						<h2>Variable Ability #1</h2>
+						<pre><code contenteditable class ="python">cookie_jar_contents = 24
+print cookie_jar_contents
+cookie_jar_contents= 0
+print cookie_jar_contents</code></pre>
+						<p class="right-align" style="padding-right: 50px;">
+							<a href="https://repl.it/DP58/17" target="_blank">(repl.it)</a>
+						</p>
+					<aside class="notes">
+						
+
+						
+					</aside>
+				</section>
+
+				
+
+				<section> <!-- Interlude: What's the deal with console.log? -->
+					<h2>Interlude: What's this "print"?</h2>
+					<p>Not every change in your code is going to be reflected on-screen</p>
+					<p>One way to make sure everything is behaving correctly is to <strong class="blue">print to the console</strong>.</p>
+
+					<aside class="notes">
+						(Read slide.) This was demonstrated in the previous chunk to show
+						that the value of cookiejar was indeed being changed.
+						print is used for this purpose in Python
+					</aside>
+				</section>
+
+				<section> <!-- Interlude: Grumpy Cat -->
+					
+					<img src="img/slide-images/kittyvillage.jpg"   />
+				</section>
+				<section>
+					<img src="img/slide-images/grumpy-cat.jpg"   />
+				</section>
+				<section>
+					<img src="img/slide-images/grumpy-village.png"   />
+				</section>
+				<section>
+				<img src="img/slide-images/parade.gif" />
+					<p class="right-align" style="padding-right: 50px;">
+							
+							<a href="https://repl.it/DP58/19" target="_blank">(repl.it)</a>
+						</p>
+					
+					<aside class="notes">
+						The kitty that left the village is ACTUALLY grumpy cat. And that's why our kitty parade started. Cat Colors are our numeric variables. 
+					</aside>
+				</section>
+
+			<section> <!-- Interlude: What's the deal with console.log? -->
+				<h2>Interlude: Commenting</h2>
+				<p>When programming it can be difficult to keep track of what's happening in a particular bit of code</p>
+				<p>This is where <strong class="blue">comments</strong> come in! They allow you to make notes in your
+				code without them interfering.</p>
+				<p>
+					In Python and Ruby, comment lines are started with a hash sign <strong class="blue">#</strong>).
+				</p>
+
+				<aside class="notes">
+					Just like writing on your monitor with a marker, but scrollable and doesn't make a mess.
+				</aside>
+			</section>
+			<section> <!-- Interlude: What's the deal with console.log? -->
+				<img src="img/slide-images/grumpy-comment.jpg"   />
+			</section>
+
+				<section> <!-- Variables: Numbers can be manipulated like numbers, strings are complicated. -->
+					<h2>Variable Ability #2</h2>
+					<p><strong class="blue">Number variables</strong> can be manipulated, <br>just like the numbers they represent.
+					<strong class="blue">String variables</strong>, however, can only be mashed together.</p>
+
+					<p class="right-align" style="padding-right: 50px;">
+						<a href="https://repl.it/DP58/20" target="_blank">(repl.it example)</a>
+					</p>
+					<aside class="notes">
+					 	Now, variable ability number two — you can run calculations
+						with number variables as if they were numbers, but with basic operations,
+						strings can only be mashed together. And now, a demonstration.
+
+					</aside>
+				</section>
+
+				
+
+				<section> <!-- Variables: A Quiz -->
+					<h1>Before we move on, a variable mini-quiz!</h1>
+				</section>
+
+				<section data-background="img/slide-images/amazonsample-quiz.jpg">
+					<aside class="notes">
+						(Run through colors and ask what type of variable might
+						be involved with each chunk.)
+					</aside>
+				</section>
+
+				<section> <!-- Logical Structures -->
+					<h2>Let's Talk To Computers: Logical Structures</h2>
+					<p>Once you have your data in the program, <br>you can manipulate it!</p>
+					<p class="fragment">Logical structures provide the basis <br>for doing things with that data.</p>
+					<aside class="notes">
+						Logical structures! Logical structures allow you to determine what
+						actions are taken with what data. If you understand the concepts,
+						you can learn how to represent them in most programming languages.
+					</aside>
+				</section>
+
+				<section> <!-- Operators -->
+					<h2>Let's Talk To Computers: Operators</h2>
+            <p class="left-align small">Operators are words or symbols that let you
+							<strong class="blue">compare or evaluate</strong> something to produce an output.</p>
+						<p class="left-align small"><strong class="green">A few examples:</strong></p>
+
+              <div class="halfblock">
+                <ul class="small">
+                  <li>== (equal to**)</li>
+                  <li>> (greater than)</li>
+                  <li>&lt; (less than)</li>
+                  <li>>= (greater than or equal to)</li>
+                </ul>
+              </div>
+              <div class="halfblock last">
+                <ul class="small">
+                  <li>&gt; = (less than or equal to)</li>
+                  <li>!= (not equal)</li>
+                  <li>and</li>
+                  <li>or</li>
+                </ul>
+              </div>
+							<p class="left-align small fragment" style="color: #aaa;">
+								** "Equal to" is a double equal sign because a single equal sign is reserved in the language for making variable assignments.
+							</p>
+
+							<aside class="notes">
+								In order to articulate conditions, we need the help of operators, which are
+								words and symbols that let you compare or evaluate something
+								to produce an output. Some of these are once again familiar from math class,
+								But the double equals sign is a little different — any guesses as to why?
+
+								... (advance slide)
+
+								Yup. In programming languages, a single equal sign is used to assign values
+								while a double equal sign is used to determine if two values are equivalent.
+								Additionally, the exclamation point in front of an equal sign is the programming
+								equivalent of not equal to. "And" will run code if both listed conditions are true,
+								"or" will evaluate to true if one condition is true. Let's try them out!
+							</aside>
+				</section>
+
+				<section> <!-- Let's try Operators -->
+					<h2>Let's Try Operators!</h2>
+					<ul>
+						<li>We're going to pop over to <a href="https://repl.it/DP58/12" target="_blank">repl.it</a>.</li>
+					</ul>
+				</section>
+
+				<section> <!-- If/Else Statements -->
+					<h2>Let's Talk To Computers:<br>If/Else Statements</h2>
+					<p>If/Else statements evaluate a condition and perform actions based on the result.</p>
+					<p><strong class="green">If the condition is true</strong>, then the computer does the action or actions that are listed after the <b class="blue">IF</b> statement</p>
+					<p><strong class="green">If the condition is false</strong>, then the computer does the action or actions that are listed in the <b class="blue">ELSE</b> statement.</p>
+
+					<aside class="notes">
+						If we popped back to Amazon, we could say "IF" you're logged in, show your name and cart numbers.
+						"ELSE", show a link to the login page. Also, "IF" you're an Amazon Prime member, you get free shipping!
+						"ELSE", you have to pay for shipping like a peasant.
+					</aside>
+				</section>
+
+				<section> <!-- Let's Try If/Else Statements -->
+					<h2>Let's Try If/Else!</h2>
+          <ul>
+            <li>We're going to pop over to <a href="https://repl.it/DP58/21" target="_blank">repl.it</a>.</li>
+            <!-- https://repl.it/DP58/13 -->
+          </ul>
+				</section>
+
+
+				<section> <!-- Indentation -->
+					<h2>Interlude: What's all this white space?</h2>
+					<p>One nice thing about some newer languages is that it looks similar to writing English.</p>
+					<p>However, when dispensing with punctuation, the computer substitutes indentation to make that
+					actions execute correctly and in the right order.</p>
+				</section>
+
+				<section> <!-- A Programming Joke -->
+					<h1>And now, a break for one of those programming jokes...</h1>
+				</section>
+
+				<section> <!-- A Programming Joke -->
+					<h3 class="blue left-align" style="line-height: 1.2;">
+						A programmer's partner sends them to go pick up some groceries, asking
+						them to get a loaf of bread, and, if there are eggs, to get twelve.
+					</h3>
+					<h3 class="fragment left-align" style="line-height: 1.2;">The programmer returns with twelve loaves of bread.</h3>
+				</section>
+
+				<section> <!-- Loops -->
+					<h2>Let's Talk To Computers: Loops</h2>
+					<p>A loop is a <strong class="blue">set of instructions that repeats</strong><br/>until a certain condition is reached.</p>
+					<p class="fragment">Two kinds of loops are <b class="blue">For Loops</b> and <b class="blue">While Loops</b>.</p>
+					<aside class="notes">
+						(Read Slide) ... but we'll only be touching on while loops in this class.
+					</aside>
+				</section>
+
+					<section> <!-- Why Loops> -->
+						<h2>Why Use Loops?</h2>
+							<p>Loops are awesome at doing repetitive tasks and reducing the amount of code you need to write.</p>
+
+						<aside class="notes">
+							Loops are great at doing repetitive tasks and reducing the amount
+							of code that you need to write. Depending on what you're doing, you
+							could have hundreds of lines of code using if/then/else, or you could
+							write a simple loop statement. For example... imagine Oprah
+							was a computer.
+						</aside>
+					</section>
+
+					<section> <!-- Why Loops? -->
+						<h2>Why Use Loops?</h2>
+
+						<pre><code contenteditable class="python">print('You get a car!')
+print('You get a car!')
+print('You get a car!')
+print('You get a car!')
+print('You get a car!')
+print('You get a car!')
+print('You get a car!')
+print('You get a car!')
+print('You get a car!')
+print('You get a car!')
+print('You get a car!')
+print('You get a car!')
+print('You get a car!')
+print('You get a car!')
+print('You get a car!')</code></pre>
+						<aside class="notes">
+							When it came time to distribute her favorite things, she could
+							print "You get a car!" 276 times for each member of her studio
+							audience.
+						</aside>
+					</section>
+
+					<section> <!-- Why Loops? -->
+						<h2>Why Use Loops?</h2>
+
+						<pre><code contenteditable class="python">number_of_cars = 276
+
+while number_of_cars > 0:
+	print('You get a car!')
+	number_of_cars = number_of_cars - 1
+</code></pre>
+						<aside class="notes">
+							... or she could rapidly loop through the entire studio audience.
+							to do the same thing.
+						</aside>
+					</section>
+
+        <section> <!-- Let's Loop! -->
+          <h2>Let's Do Some Loops!</h2>
+          <ul>
+            <li>Go to <a href="https://repl.it/DP58/22" target="_blank">repl.it</a>.</li>
+          </ul>
+        </section>
+
+      
+
+       
+        <section> <!-- Beware the Infinite Loop! -->
+          <h2>Beware the Infinite Loop!</h2>
+            <p>An <strong class="blue">infinite loop</strong> is a loop that will never meet the condition to stop.<br> It will keep going until it's used up all your computer's (or server's) memory (RAM). This is bad!</p>
+            <p class="green">Example for our loop:</p>
+              <ul class="small">
+                <li>If the <span class='code-fragment'><code>cookie_jar_contents = cookie_jar_contents - 1</code></span> line was missing, it would keep looping because the cookie jar contents will never be 0!</li>
+                
+              </ul>
+
+							<aside class="notes">
+								If you're not careful, it's possible to write a loop that won't ever
+								find its way to its stop condition. These are infinite loops, and they
+								are bad news bears. As we alluded to earlier, computers do exactly what you ask them.
+							</aside>
+        </section>
+
+        <section data-background="img/slide-images/trapped-in-loop.gif"> <!-- Trapped in a Loop -->
+					<aside class="notes">
+						Thusly, they'll keep going until they've used up all their (or their server's)
+						memory (RAM). Your computer's abject feeling of defeat will not be unlike this cat's.
+						Usually, this will just force you to introduce the end condition of closing your browser,
+						but an infinite loop will stop any program in its tracks.
+					</aside>
+        </section>
+
+				<section> <!-- Synthesis -->
+					<h2>Using What We've Learned</h2>
+					<p>
+						We've run through <strong class="blue">Variables,</strong> <strong class="blue">If/Else Statements</strong>,
+						and <strong class="blue">Loops</strong>... now let's try to think through how we'd use them all together!
+					</p>
+					
+				</section>
+
+
+			<section> <!-- Synthesis -->
+				<h2>Let's Try It All Together!</h2>
+				<ul>
+					<li>We're going to pop over to <a href="https://repl.it/DPXZ/11" target="_blank">repl.it</a>.</li>
+				</ul>
+			</section>
+
+			<section> <!-- Wrap Up -->
+				<h2>Wrapping up...</h2>
+				<p>As promised, some terrible programming jokes.</p>
+			</section>
+
+			<section> <!-- Wrap Up: Jokes -->
+				<h2 class="blue" style="line-height: 1.2;">
+					There are 10 types of people &mdash;
+					<span class="fragment">those that know binary</span>
+					<span class="fragment">and those that don't.</span>
+				</h2>
+			</section>
+
+
+			<section> <!-- Wrap Up: Jokes -->
+				<img src="img/slide-images/ifdog.jpg" alt="A dog being placed into a garbage can upon ambiguous request by signage." />
+			</section>
+
+			<section> <!-- Wrap Up: Jokes -->
+				<img src="img/slide-images/loopcomic.jpg" alt="A kid trying to get around writing a phrase on the chalkboard 100 times.." />
+			</section>
+
+				<section> <!-- What Next? -->
+					<h1>What now?</h1>
+				</section>
+
+				<section> <!-- What Next? -->
+					<h2>Next Steps</h2>
+					<ul>
+						<li class="fragment">Hit up <a href="http://www.meetup.com/Girl-Develop-It-Cincinnati/events/233794618/" target="_blank">Intro to HTML/CSS</a> Oct 4th</li>
+						<li class="fragment">Hit up <a href="http://www.meetup.com/Girl-Develop-It-Cincinnati/events/234147304/" target="_blank">Intro to Programming with Ruby</a> Oct 8th</li>
+						<li class="fragment">Explore some online learning tools!</li>
+					</ul>
+				</section>
+
+        <section> <!-- Online Resources -->
+          <h2>Next Steps: Online Resources &amp; Books</h2>
+          <ul>
+            <li>Codecademy: <a href="http://www.codecademy.com" target="_blank">www.codecademy.com</a></li>
+						<li>Khan Academy: <a href="https://www.khanacademy.org" target="_blank">www.khanacademy.org</a></li>
+						<li>Lynda (free with a CPL Membership!): <a href="http://www.lynda.com" target="_blank">https://www.lynda.com</a></li>
+            <li>Coursera: <a href="https://www.coursera.org" target="_blank">www.coursera.org</a></li>
+            <li>Skillcrush: <a href="http://skillcrush.com" target="_blank">www.skillcrush.com</a></li>
+            <li>Udacity: <a href="https://www.udacity.com" target="_blank">www.udacity.com</a></li>
+            <li>Udemy: <a href="https://www.udemy.com" target="_blank">www.udemy.com</a></li>
+            <li>And of course, <a href="http://www.girldevelopit.com/chapters/cincinnati" target="_blank">GDI Cincinnati!</a></li>
+            <li> <a href="http://www.amazon.com/Program-Second-Edition-Facets-Series/dp/1934356360" target="_blank">Learn to Program</a> by Chris Pine</li>
+            <li> <a href="http://www.amazon.com/Everyday-Scripting-Ruby-Teams-Testers/dp/0977616614/ref=sr_1_1?s=books&ie=UTF8&qid=1405369294&sr=1-1&keywords=everyday+scripting+with+ruby" target="_blank">Everyday Scripting in Ruby</a> by Brian Marick</li>
+          </ul>
+        </section>
+
+				<section> <!-- What Next? -->
+					<h2>Next Steps</h2>
+					<ul>
+						<li >Hit up <a href="http://www.meetup.com/Girl-Develop-It-Cincinnati/events/233794618/" target="_blank">Intro to HTML/CSS</a> Oct 4th</li>
+						<li >Hit up <a href="http://www.meetup.com/Girl-Develop-It-Cincinnati/events/234147304/" target="_blank">Intro to Programming with Ruby</a> Oct 8th</li>
+						<li>Explore some online learning tools!</li>
+						<li class="fragment">Connect with us on Slack!</li>
+					</ul>
+				</section>
+
+				<section> <!-- Join the Slack Channel! -->
+					<h2>Next Steps: GDI Cincy Slack</h2>
+					<img src="img/slide-images/slack.png" style="height: 150px;" alt="Slack logo" />
+					<p>
+						Join the <a href="http://slack.gdicincy.com/" target="_blank">GDI Cincy Slack channel</a> to stay in touch and hit us up with any questions!
+					</p>
+				</section>
+
+				<section> <!-- What Next? -->
+					<h2>Next Steps</h2>
+					<ul>
+						<li >Hit up <a href="http://www.meetup.com/Girl-Develop-It-Cincinnati/events/233794618/" target="_blank">Intro to HTML/CSS</a> Oct 4th</li>
+						<li >Hit up <a href="http://www.meetup.com/Girl-Develop-It-Cincinnati/events/234147304/" target="_blank">Intro to Programming with Ruby</a> Oct 8th</li>
+						<li>Explore some online learning tools!</li>
+						<li>Connect with us on Slack!</li>
+						<li class="fragment">Get into the community!</li>
+					</ul>
+				</section>
+
+				<section> <!-- Get out in the community! -->
+					<h2>Next Steps: Get Connected!</h2>
+					<ul>
+						<li><a href="http://www.meetup.com/Cincinnati-Web-Tech-Study-Group/" target="_blank">Cincinnati Web-Tech Study Group</a></li>
+						<li><a href="http://www.meetup.com/WWCode-Cincinnati/" target="_blank">Women Who Code Cincinnati</a></li>
+						<li><a href="http://www.meetup.com/Cincinnati-Javascript-User-Group/" target="_blank">Cincy JavaScript User Group</a></li>
+						<li><a href="http://www.meetup.com/Cincinnati-Web-Tech-Study-Group/" target="_blank">Cincy Py</a></li>
+						<li><a href="http://www.cincyrb.com" target="_blank">Cincy.rb</a></li>
+					</ul>
+				</section>
+
+				<section> <!-- REMEMBER -->
+					<h1>Wrapping up, remember the following:</h1>
+				</section>
+
+				<section> <!-- REMEMBER -->
+					<img src="img/slide-images/confuseddog.jpg" style="height: 100vh;" alt="A dog is wearing goggles in a lab environment. The caption reads, 'I have no idea what I'm doing.'">
+					<aside class="notes">
+						While I hope that you feel like you've got a pretty good handle on
+						the basics and larger concepts of programming, the learning curve
+						is an intimidating bugger, and there will come a time where you
+						look at the code before you and say... 'Ehhhh—?'
+					</aside>
+				</section>
+
+				<section> <!-- REMEMBER -->
+					<img src="img/slide-images/jake-the-dog.jpg" style="height: 50vh" alt="Jake the Dog from Adventure Time, being encouraging!">
+					<blockquote>Sucking at something is the first step to being sorta good at something.</blockquote>
+					<p><small>&mdash; Jake the Dog</small></p>
+
+					<aside class="notes">
+						But as discouraged as you might feel at that time, remember the words of
+						another dog, and keep at it.
+					</aside>
+				</section>
+
+				<section> <!-- REMEMBER -->
+					<img src="img/slide-images/moss-rage.gif" style="height: 100vh;" alt="A dog is wearing goggles in a lab environment. The caption reads, 'I have no idea what I'm doing.'">
+					<aside class="notes">
+						There will be moments like this. Very frequently. But if you keep at
+						it...
+					</aside>
+				</section>
+
+				<section> <!-- REMEMBER -->
+					<img src="img/slide-images/skateaway.gif" style="height: 100vh;" alt="A dog is wearing goggles in a lab environment. The caption reads, 'I have no idea what I'm doing.'">
+					<aside class="notes">
+						There will also be moments like this. So stay on the path, and don't
+						be afraid to pick our brains, because we want you to be awesome and
+						successful!
+					</aside>
+				</section>
+
+				<section>
+					<h2>Any questions? <span>Comments?</span></h2>
+				</section>
+
+				<section>
+					<h1>Happy Coding!</h1>
+				</section>
+
+				<section>
+					<img src="img/circle-gdi-logo.png" alt="GDI Logo" class="noborder" style="height: 50vh;"/>
+					<h1>Intro to Programming Concepts</h1>
+					<p>
+						<small>Brought to you by <a href="www.girldevelopit.com/chapters/cincinnati">Girl Develop It Cincinnati</a> | <a href="http://www.twitter.com/gdicincinnati">@GDICincinnati</a></small>
+					</p>
+					<p>
+						<small>Presented by Amy Moyer </small>
+					</p>
+				</section>
+
+<!-- All Content Goes Here -->
+
+			</div>
+  		<footer>
+        <div class="copyright">
+          Intro to Programming Concepts &mdash; Amy Moyer &mdash; GDI Cincinnati
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+        </div>
+      </footer>
+		</div>
+
+
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+
+
+				transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/accessibility-helper/js/accessibility-helper.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+    
+
+		</script>
+
+
+	</body>
+</html>

@@ -1,0 +1,216 @@
+#--------------------------- EXAMPLE 1 --------------------------- 
+cookie_jar_contents = 24
+
+
+cookie_jar_contents = 0
+
+# TO DO ITEMS:
+#
+#Print contents of Cookie Jar
+# print cookie_jar_contents
+
+#Change Variable Names
+
+#--------------------------- EXAMPLE 2 --------------------------- 
+cookie_jar_contents = 24
+print cookie_jar_contents
+cookie_jar_contents = 0
+print cookie_jar_contents
+
+# Ugh... Ok let's bake some more cookies!
+
+
+chocolate_chip = 12
+
+
+
+# How many Total?
+
+
+
+# TO DO ITEMS:
+#
+# Add more cookie variable names
+# New variable called fresh_baked_cookies
+# Print 
+
+#--------------------------- EXAMPLE 3 --------------------------- 
+cookie_jar_contents = 24
+print cookie_jar_contents
+cookie_jar_contents = 0
+print cookie_jar_contents
+
+# Ugh... Ok let's bake some more cookies!
+
+
+chocolate_chip = 12
+oatmeal_raisin = 4
+sugar = 10
+peanut_butter = 10
+
+# How many Total?
+fresh_baked_cookies = 36
+print fresh_baked_cookies
+
+# Is there another way to calculate fresh_baked_cookies ?
+#fresh_baked_cookies = chocolate_chip + oatmeal_raisin + sugar + peanut_butter
+
+# Let's put the fresh baked cookies in the cookie jar varaible
+#cookie_jar_contents = fresh_baked_cookies
+
+# Who is the biggest cookie monster?
+#cookie_monster = "Amy"
+
+# Favorite cookie
+#favorite_cookie = ""
+
+# What's the status of the cookie jar?
+
+#cookie_jar_status = "Our cookie jar is full! Yeah! But wait until " + cookie_monster + " comes around! She'll put a hurting on those " favorite_cookie " cookies!"
+#print  cookie_jar_status
+
+
+
+#--------------------------- EXAMPLE 4 --------------------------- 
+# Ugh... Ok let's bake some more cookies!
+chocolate_chip = 12
+oatmeal_raisin = 4
+sugar = 10
+peanut_butter = 10
+
+# How many Total?
+fresh_baked_cookies = chocolate_chip + oatmeal_raisin + sugar + peanut_butter
+print fresh_baked_cookies
+
+# Let's put all the fresh baked cookies in the cookie jar varaible
+cookie_jar_contents = fresh_baked_cookies
+
+#if expression:
+#   statement(s)
+#elif expression:
+#	statement(s)
+#else:
+#   statement(s)
+
+# If there are more than 24 cookies we can share!
+# Else if there are 24 and 12 then we eat them ourselves
+# Else it's time to make more cookies! (less than 12)
+
+#if cookie_jar_contents > 24 :
+#  print "Cookies for everyone!"
+#elif cookie_jar_contents > 12 :
+#  print "Nom nom cookies for me!"
+#else:
+#  print "Time to bake some more!"
+
+
+# If there is a PB allergy = true set PB cookies to 0
+#peanut_butter_allergy = True
+
+#if peanut_butter_allergy == True :
+#  peanut_butter = 0
+#  print "Womp womp. Need to toss all the peanut butter cookies"
+
+#fresh_baked_cookies = chocolate_chip + oatmeal_raisin + sugar + peanut_butter
+#print fresh_baked_cookies  
+
+# If oatmeal raisin aversion = true then set Oatmeal Raisin to 0
+
+
+
+
+
+
+
+#--------------------------- EXAMPLE 5 --------------------------- 
+# Ugh... Ok let's bake some more cookies!
+chocolate_chip = 12
+oatmeal_raisin = 4
+sugar = 10
+peanut_butter = 10
+
+# How many Total?
+fresh_baked_cookies = chocolate_chip + oatmeal_raisin + sugar + peanut_butter
+print fresh_baked_cookies
+
+# Let's put all the fresh baked cookies in the cookie jar varaible
+cookie_jar_contents = fresh_baked_cookies
+
+print "Time to eat cookies!"
+cookies_consumed_count = 0
+print cookie_jar_contents
+
+while cookie_jar_contents > 0:
+  cookie_jar_contents = cookie_jar_contents - 1
+  cookies_consumed_count = cookies_consumed_count +1
+  print "Oh yumz! These cookies are delish! But there are only " + str(cookie_jar_contents)  + " cookies left!"
+  print "I've eatten "+ str(cookies_consumed_count)  + " total cookies"
+
+
+
+# What other ways could we do this with our while loop?
+# while cookies consumed <= fresh_baked_cookies
+
+
+# Why wouldn't a use an if?
+
+
+
+
+#--------------------------- EXAMPLE 6 --------------------------- 
+# Ugh... Ok let's bake some more cookies!
+chocolate_chip = 12
+oatmeal_raisin = 4
+sugar = 10
+peanut_butter = 10
+
+# How many Total?
+fresh_baked_cookies = chocolate_chip + oatmeal_raisin + sugar + peanut_butter
+print fresh_baked_cookies
+
+# Let's put all the fresh baked cookies in the cookie jar varaible
+cookie_jar_contents = fresh_baked_cookies
+
+print "Time to eat cookies!"
+cookies_consumed_count = 0
+print cookie_jar_contents
+
+# Well of course I'm going to save the best for last! Let's go in order... 
+# 1. Chocolate chip
+# 2. Peanut Butter
+# 3. Sugar
+# 4. Oatmeal Raisin
+
+while cookie_jar_contents > 0:
+  if chocolate_chip > 0 :
+    #eat a chocolate chip cookie!
+    chocolate_chip = chocolate_chip -1
+    cookies_consumed_count = cookies_consumed_count +1
+    print "There are " + str(chocolate_chip) + " chocolate chip cookies left"
+  elif peanut_butter > 0 :
+    #eat a peanut butter  cookie!
+    peanut_butter = peanut_butter -1
+    cookies_consumed_count = cookies_consumed_count +1
+    print "There are " + str(peanut_butter) + " peanut butter cookies left"
+  elif sugar > 0:
+     #eat a sugar cookie!
+    sugar = sugar -1
+    cookies_consumed_count = cookies_consumed_count +1
+    print "There are " + str(sugar) + " sugar cookies left"
+  elif oatmeal_raisin > 0 :
+    #eat a sugar cookie!
+    oatmeal_raisin = oatmeal_raisin -1
+    cookies_consumed_count = cookies_consumed_count +1
+    print "There are " + str(oatmeal_raisin) + " oatmeal raisin cookies left"
+  else :
+    print "Cookie Jar is empty!" 
+  
+  cookie_jar_contents = chocolate_chip + peanut_butter + sugar + oatmeal_raisin
+  
+  print "Oh yumz! These cookies are delish! But there are only " + str(cookie_jar_contents)  + " cookies left!"
+  print "I've eatten "+ str(cookies_consumed_count)  + " total cookies"
+
+
+# Do we ever see cookie jar empty? 
+# Instead of repeating code... let's be efficient. What could we change?
+
